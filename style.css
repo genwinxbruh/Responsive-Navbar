@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: rgb(233, 216, 250);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=======Nav-bar=======*/
+
+nav {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+.logo {
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+}
+
+.links a {
+  color: rgb(104, 95, 95);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.links a:hover {
+  background-color: hsl(205, 86%, 81%);
+  color: rgb(126, 5, 207);
+  padding-left: 1.5rem;
+}
+
+.social-icons {
+  display: none;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+/* toggle class */
+.show-links {
+  height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  /* notice height auto */
+  .links {
+    /* height: auto; */
+    display: flex;
+  }
+
+  .links a {
+    padding:0.2rem;
+    margin: 0 0.4rem;
+    transition: all 0.3s linear;
+  }
+
+  .links a:hover {
+    padding: 0.2rem;
+    background: transparent;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: rgb(99, 2, 255);
+    transition: all 0.3s linear;
+  }
+
+  .social-icons a:hover {
+    color: rgb(18, 205, 238)
+  }
+}
