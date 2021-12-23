@@ -106,7 +106,7 @@ nav {
 
   /* notice height auto */
   .links {
-    /* height: auto; */
+    height: auto;
     display: flex;
   }
 
